@@ -1,0 +1,54 @@
+/*variaveis de cores*/
+:root {
+    --whitePure: #ffffff;
+    --white: #f9f7f6;
+    --black: #000000;
+    --dark: #212121;
+    --whitedark: #ffffff;
+
+    /*sombras*/
+    --colorShadowLight: #0000004d;
+    --colorShadowDark: #7271714d;
+}
+
+/*tema light*/
+.light-theme {
+    /*cores padrão*/
+    --bg: var(--white);
+    --fontColor: var(--black);
+
+    /*cores da navbar*/
+    --navBg: var(--whitePure);
+    --navFontColor: var(--black);
+
+    /*cor do botão*/
+    --switchBg: var(--dark);
+    --switchFontColor: var(--whitedark);
+    
+    /*cor da sombra*/
+    --shadowColor: var(--colorShadowLight);
+}
+
+/*thema escuro*/
+.dark-theme {
+    /*cores padrão*/
+    --bg: var(--black);
+    --fontColor: var(--whitedark);
+
+    /*cores da navbar*/
+    --navBg: var(--dark);
+    --navFontColor: var(--whitedark);
+
+    /*cor do botão*/
+    --switchBg: var(--white);
+    --switchFontColor: var(--black);
+
+    /*cor da sombra*/
+    --shadowColor: var(--colorShadowDark);
+}
+
+/*botão de troca de tema*/
+.switch {
+    color: var(--switchFontColor);
+    background-color: var(--switchBg);
+}
