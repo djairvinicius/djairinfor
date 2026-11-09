@@ -1,50 +1,50 @@
 /*variaveis de cores*/
 :root {
-    --whitePure: #ffffff4d;
-    --white: #f9f7f6;
+    /*cores padrão*/
+    --white: #ffffff;
     --black: #000000;
-    --dark: #212121;
-    --whitedark: #ffffff;
 
-    /*sombras*/
-    --colorShadowLight: #0000004d;
-    --colorShadowDark: #7271714d;
+    /*Imagens para o fundo do navbar*/
+    /*para o tema claro*/
+    --bgNavLight: url('../images/navLight.jpg');
+    /*para o tema escuro*/
+    --bgNavDark: url('../images/navDark.jpg');
 }
 
 /*tema light*/
 .light-theme {
-    /*cores padrão*/
+    /*cores global*/
     --bg: var(--white);
     --fontColor: var(--black);
 
     /*cores da navbar*/
-    --navBg: var(--whitePure);
+    --navBg: var(--white);
     --navFontColor: var(--black);
 
     /*cor do botão*/
-    --switchBg: var(--dark);
-    --switchFontColor: var(--whitedark);
+    --switchBg: var(--black);
+    --switchFontColor: var(--white);
     
-    /*cor da sombra*/
-    --shadowColor: var(--colorShadowLight);
+    /*variante light para o fundo do navbar*/
+    --bgNav: var(--bgNavLight);
 }
 
 /*thema escuro*/
 .dark-theme {
-    /*cores padrão*/
+    /*cores global*/
     --bg: var(--black);
-    --fontColor: var(--whitedark);
+    --fontColor: var(--white);
 
     /*cores da navbar*/
     --navBg: var(--dark);
-    --navFontColor: var(--whitedark);
+    --navFontColor: var(--white);
 
     /*cor do botão*/
     --switchBg: var(--white);
     --switchFontColor: var(--black);
 
-    /*cor da sombra*/
-    --shadowColor: var(--colorShadowDark);
+    /*variante light para o fundo do navbar*/
+    --bgNav: var(--bgNavDark);
 }
 
 /*botão de troca de tema*/
