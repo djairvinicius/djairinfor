@@ -10,10 +10,9 @@
     z-index: 1000;
     backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-    background-color: var(--navBg);
-    /*
-    box-shadow: 2px 2px 20px var(--shadowColor);
-    */
+    background-image: var(--bgNav);
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width: 1000px) {
